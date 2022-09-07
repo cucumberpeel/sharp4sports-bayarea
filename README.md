@@ -1,3 +1,3 @@
 # sharp4sports-bayarea
-informational landing page for a team of bay area figure skating coaches
+Informational landing page for a team of Bay Area figure skating coaches.
 HTML, CSS, text animations, forms
