@@ -24,6 +24,20 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.section-title span {
+    color: steelblue;
+}
 /* end of whole document styles */
 
 /* hero header styles */
@@ -35,6 +49,18 @@ a {
     z-index: 1;
 }
 
+#hero_background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
 #hero::after {
     content: '';
     position: absolute;
@@ -43,7 +69,7 @@ a {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .7;
+    opacity: .6;
     z-index: -1;
 }
 
@@ -64,7 +90,7 @@ a {
     animation-delay: 1s;
 }
 
-#hero h1:nth-child(1) {
+#hero :nth-child(1) {
     animation-delay: 1.5s;
 }
 #hero h1:nth-child(2) {
@@ -120,10 +146,119 @@ a {
 }
 
 #hero button:hover {
-    color: darkslateblue;
+    color: black;
     background-color: lightblue;
 }
 /* end of hero header styles */
+
+/* about section styles */
+#about .about-container {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+#about .col-left .about-img img {
+    width: 100%;
+    justify-content: center;
+}
+
+#about .col-left {
+    width: 20%;
+}
+
+#about .col-right {
+    width: 100%;
+}
+
+#about .col-right h2 {
+    font-size: 2rem;
+    font-weight:600;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right p {
+    margin-bottom: 20px;
+}
+/* end of about section styles */
+
+/* coaches section styles */
+#coaches .coaches-container {
+    flex-direction:column;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#coaches .coaches-header h1 {
+    margin-bottom: 50px;
+}
+
+#coaches .coach-intro {
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-size:cover;
+    background-position:center;
+    margin: 10px 10%;
+    position: relative;
+    color: white;
+    z-index: 1;
+}
+
+#coaches #ninik-intro {
+    background-image: url("/images/sample-bg.jpeg");
+}
+
+#coaches #ellicia-intro {
+    background-image: url("/images/sample-bg-2.jpg");
+}
+
+#coaches #daniil-intro {
+    background-image: url("/images/sample-bg-3.jpg");
+}
+
+#coaches .coach-intro h1 {
+    font-size: 2.5rem;
+    font-weight: 300px;
+    letter-spacing: .05rem;
+    text-transform:uppercase;
+    margin-bottom: 15px;
+}
+
+#coaches .coach-intro p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+#coaches .all-coaches {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#coaches .coach-intro::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: black;
+    opacity: .6;
+    z-index: -1;
+}
+/* end of coaches section styles */
 
 /* keyframes */
 @keyframes reveal_box {
