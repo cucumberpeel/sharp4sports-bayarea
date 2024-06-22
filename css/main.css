@@ -42,7 +42,7 @@ a {
 
 /* hero header styles */
 #hero {
-    background-image: url("../images/landingpage.jpg");
+    background-image: url('/images/landingpage.jpg');
     background-size: cover;
     background-position: top center;
     position: relative;
